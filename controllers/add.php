@@ -1,6 +1,6 @@
 <?php
 
-if(!empty($_POST)){
+if(!empty($_POST) && $_POST['view'] == 'add'){
     $data = [];
     if(!empty($_POST['title']) && !empty($_POST['content'])){
         $data['date'] = $_POST['date'];
